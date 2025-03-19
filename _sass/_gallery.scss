@@ -1,0 +1,22 @@
+body,
+html {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.card.image {
+  max-width: 25rem;
+  height: fit-content;
+}
+
+.card.image img {
+  width: 100%;
+  height: auto;
+}
