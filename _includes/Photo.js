@@ -21,10 +21,10 @@ class Photo {
   
   checkBoundary() {
     if (this.x > width || this.x < 0){
-      this.dx = this.dx * -1 - 1;
+      this.dx = this.dx * -1;
     }
     if (this.y > height || this.y < 0){
-      this.dy = this.dy * -1 - 1;
+      this.dy = this.dy * -1;
     }
   }
 }

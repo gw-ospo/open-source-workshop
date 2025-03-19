@@ -26,8 +26,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
   photos.forEach((x) => {
-    imgX = random(0, width);
-    imgY = random(0, height);
+    imgX = random(0, width-1);
+    imgY = random(0, height-1);
     contribs.push(new Photo(x, imgX, imgY));
   });
 }
