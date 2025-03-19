@@ -9,6 +9,8 @@ class Photo {
   
   drawImg() {
     this.img.resize(width/4, 0);
+    this.img.filter(POSTERIZE);
+    tint(255, 200);
     image(this.img, this.x, this.y);
   }
   
@@ -19,10 +21,10 @@ class Photo {
   
   checkBoundary() {
     if (this.x > width || this.x < 0){
-      this.dx = this.dx * -1;
+      this.dx = this.dx * -1 - 1;
     }
     if (this.y > height || this.y < 0){
-      this.dy = this.dy * -1;
+      this.dy = this.dy * -1 - 1;
     }
   }
 }
