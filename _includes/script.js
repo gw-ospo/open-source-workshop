@@ -33,7 +33,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0, 115, 170);
   for (let i = 0; i < contribs.length; i++) {
     contribs[i].drawImg();
     contribs[i].moveImg();
