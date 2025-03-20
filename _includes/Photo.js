@@ -9,7 +9,7 @@ class Photo {
   
   drawImg() {
     this.img.resize(width/4, 0);
-    this.img.filter(POSTERIZE);
+    // this.img.filter(POSTERIZE);
     tint(255, 200);
     image(this.img, this.x, this.y);
   }
