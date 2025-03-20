@@ -19,6 +19,7 @@ let unformattedPhotos = getPictures();
 let photos = [];
 let imgX;
 let imgY;
+let direction;
 let contribs = [];
 let displaceColorsSrc = `
 precision highp float;
@@ -57,9 +58,10 @@ function setup() {
   imageMode(CENTER);
   displaceColors = createFilterShader(displaceColorsSrc);
   photos.forEach((x) => {
-    imgX = random(0, width-1);
-    imgY = random(0, height-1);
-    contribs.push(new Photo(x, imgX, imgY));
+    imgX = random(1, width-1);
+    imgY = random(1, height-1);
+    direction = Math.floor(Math.random() * 10);
+    contribs.push(new Photo(x, imgX, imgY, direction));
   });
 }
 

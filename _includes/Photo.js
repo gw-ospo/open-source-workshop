@@ -1,7 +1,8 @@
 class Photo {
-  constructor(img, x, y){
+  constructor(img, x, y, direction){
     this.x = x;
     this.y = y;
+    this.direction = direction;
     this.dx = 2;
     this.dy = 3;
     this.img = img;
@@ -9,14 +10,18 @@ class Photo {
   
   drawImg() {
     this.img.resize(width/4, 0);
-    // this.img.filter(POSTERIZE);
     tint(255, 200);
     image(this.img, this.x, this.y);
   }
   
   moveImg() {
-    this.x = this.x + this.dx;
-    this.y = this.y + this.dy;
+    if (this.direction % 2 == 0) {
+      this.x = this.x + this.dx;
+      this.y = this.y + this.dy;
+    } else {
+      this.x = this.x - this.dx;
+      this.y = this.y - this.dy;
+    }
   }
   
   checkBoundary() {
