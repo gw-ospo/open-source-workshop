@@ -1,5 +1,5 @@
 # OPEN SOURCE ART
-GW OSPO's reusable open source collaborative art piece
+[GW OSPO](https://github.com/gw-ospo)'s reusable open source [collaborative art piece](https://maxturer.github.io/opensourceart)
 
 ## HOW TO CONTRIBUTE ART
 1. Make some art! That can be abstract patterns, self-portraits, botanicals, stick figures, photos, messages, and anything else you'd like to share. If you'd like to share something you've already made, that's fine too.
