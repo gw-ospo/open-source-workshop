@@ -10,8 +10,6 @@
 6. As the "base repository", select `maxturer/opensourceart` and select `main` for the "base". As the "head repository", select "YOUR_USER_NAME/opensourceart" with `main` as the base. 
 7. Open your pull request. Once we merge it, your art will join the collection. 
 
-If you aren't sure how any of these steps work, ask an OSCON volunteer to show you.
-
 ## HOW TO CONTRIBUTE CODE
 This projection is a github pages site, brought to you by Jekyll and p5.js.
 The fun stuff is in the `_includes` directory, particularly `Photo.js`, a class that handles animation and display of all the floating artwork.
