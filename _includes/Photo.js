@@ -50,9 +50,18 @@ class Photo {
   
   drawImg() {
     if (this.img.width > this.img.height) {
-      this.img.resize(width/4, 0);
+      if (height < width) {
+        this.img.resize(width/4, 0);
+      } else {
+        this.img.resize(width/3.8, 0);
+      }
     } else if (this.img.height >= this.img.width) {
-      this.img.resize(0, height/3);
+      if (height < width) {
+        this.img.resize(0, height/3);
+      } else {
+        this.img.resize(0, height/6.5);
+      }
+      
     }
     image(this.img, this.x, this.y);
   }

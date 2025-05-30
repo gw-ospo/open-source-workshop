@@ -90,9 +90,9 @@ function draw() {
   push();
   fill(255);
   textSize(width/10);
-  text('OPEN SOURCE ART', 20, width/10);
+  text('OPEN SOURCE ART', width/50, width/10);
   textSize(width/15);
-  text('FIRST CONTRIBUTIONS', 25, width/10 + width/15);
+  text('FIRST CONTRIBUTIONS', width/30, width/10 + width/15);
   pop();
   frameRate(40);
 }
