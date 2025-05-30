@@ -1,5 +1,5 @@
-# GWU OSCON 
-GW OSCON 2025's open source collaborative art piece
+# OPEN SOURCE ART
+GW OSPO's reusable open source collaborative art piece
 
 ## HOW TO CONTRIBUTE ART
 1. Make some art! The OSCON has construction paper, pastels, and giant markers that you can use to create your masterpiece. That can be abstract patterns, self-portraits, botanicals, stick figures, messages, and anything else you'd like to share. If you'd like to share something you've already made, that's fine too.
