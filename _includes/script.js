@@ -56,30 +56,43 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
-  displaceColors = createFilterShader(displaceColorsSrc);
+
   photos.forEach((x) => {
     imgX = random(1, width-1);
     imgY = random(1, height-1);
     direction = Math.floor(Math.random() * 10);
-    contribs.push(new Photo(x, imgX, imgY, direction));
+    contribs.push(new Photo(x, imgX, imgY, direction, random(255), random(100, 255), random(100, 255)));
   });
 }
 
 function draw() {
-  background(255);
+  background(0);
   push();
+
   for (let i = 0; i < contribs.length; i++) {
+    if (i > 0 && contribs[i].changePlaces) {
+      let leader = contribs[i];
+      let follower = contribs[i - 1];
+      contribs[i] = follower;
+      contribs [i - 1] = leader;
+      contribs[i].changePlaces = false;
+    }
+  }
+
+  for (let i = 0; i < contribs.length; i++) {
+    contribs[i].drawTrail();
     contribs[i].drawImg();
     contribs[i].moveImg();
     contribs[i].checkBoundary();
   }
-  filter(displaceColors);
+  //filter(displaceColors);
   pop();
   push();
+  fill(255);
   textSize(width/10);
-  text('GW OSCON', 50, width/10);
+  text('OPEN SOURCE ART', 20, width/10);
   textSize(width/15);
-  text('2025', 55, width/10 + width/15);
+  text('FIRST CONTRIBUTIONS', 25, width/10 + width/15);
   pop();
   frameRate(40);
 }
