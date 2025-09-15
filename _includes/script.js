@@ -1,6 +1,6 @@
 /*
  ** fun jekyll/github pages workaround:
- ** getPictures uses Liquid to grab file paths from items in the YOUR_PHOTOS_HERE directory
+ ** getPictures uses Liquid to grab file paths from items in the YOUR_IMAGES_HERE directory
  ** then returns array of filepaths to be used by p5js (below)
  ** Photo object & its display/animation can be found in Photo.js
  */
@@ -90,7 +90,7 @@ function draw() {
   push();
   fill(255);
   textSize(width/10);
-  text('OPEN SOURCE ART', width/50, width/10);
+  text('OPEN SOURCE WORKSHOP', width/50, width/10);
   textSize(width/15);
   text('FIRST CONTRIBUTIONS', width/30, width/10 + width/15);
   pop();

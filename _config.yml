@@ -19,11 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: First Contributions
-baseurl: "/opensourceart" # the subpath of your site, e.g. /blog
-url: "https://maxturer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/open-source-workshop" # the subpath of your site, e.g. /blog
+url: "https://gw-ospo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 defaults:
   - scope:
-      path: "YOUR_PHOTOS_HERE"
+      path: "YOUR_IMAGES_HERE"
     values:
       image: true
 sass:
